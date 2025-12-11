@@ -1,75 +1,69 @@
 // Dados das empresas
 const companiesData = {
-    'uniao-quimica': {
-        name: 'União Química Farmacêutica Nacional',
-        period: 'Novembro 2024 - Maio 2025',
-        position: 'Coordenador de Segurança do Trabalho, Saúde, Meio Ambiente e Emergências',
+    'technova': {
+        name: 'TechNova Systems',
+        period: 'Nov 2023 - Presente',
+        position: 'Arquiteto de Sistemas Sênior',
         achievements: [
-            'Coordenação de programas de SSMA em ambiente farmacêutico',
-            'Gestão de emergências e preparação para respostas',
-            'Implementação de protocolos de segurança específicos para indústria farmacêutica',
-            'Manutenção de certificações ISO e BPF (Boas Práticas de Fabricação)'
+            'Arquitetei uma plataforma distribuída de streaming de eventos lidando com mais de 1M eventos/seg',
+            'Reduzi custos de infraestrutura em 40% através de otimização serverless',
+            'Liderei uma equipe de 10 engenheiros na migração de monólitos legados para microsserviços',
+            'Implementei práticas de engenharia do caos para melhorar a resiliência do sistema'
         ]
     },
-    'wacker': {
-        name: 'Wacker Química do Brasil',
-        period: 'Agosto 2016 - Novembro 2024 (8+ anos)',
-        position: 'Gerente de EHSS & PS & SGI / Coordenador de SGI',
+    'orbital': {
+        name: 'Orbital Dynamics',
+        period: 'Ago 2018 - Out 2023 (5+ anos)',
+        position: 'Engenheiro Frontend Líder',
         achievements: [
-            'Liderança de equipes multidisciplinares em ambiente químico multinacional',
-            'Implementação e manutenção de múltiplas certificações ISO (45001, 14001, 9001)',
-            'Gestão integrada de Saúde, Segurança, Meio Ambiente e Segurança Patrimonial',
-            'Desenvolvimento de cultura de segurança com metodologia DuPont',
-            'Redução significativa de incidentes e melhoria contínua de indicadores',
-            'Gestão de auditorias de 1ª, 2ª e 3ª partes'
+            'Construí um painel de telemetria de satélite em tempo real usando WebGL e WebSockets',
+            'Desenvolvi uma biblioteca de componentes proprietária usada em 5 produtos internos',
+            'Melhorei o tempo de carregamento da aplicação em 60% através de code splitting e lazy loading',
+            'Mentorei desenvolvedores júnior e estabeleci padrões de revisão de código'
         ]
     },
-    'borealis': {
-        name: 'Borealis Brasil',
-        period: 'Novembro 2015 - Agosto 2016',
-        position: 'Consultor de SSMA, Qualidade e Sustentabilidade',
+    'pixelperfect': {
+        name: 'PixelPerfect Studios',
+        period: 'Jan 2016 - Jul 2018',
+        position: 'Tecnólogo Criativo',
         achievements: [
-            'Consultoria especializada em sistemas de gestão integrados',
-            'Implementação de programas de sustentabilidade corporativa',
-            'Otimização de processos de SSMA e Qualidade',
-            'Desenvolvimento de estratégias de ESG para o setor petroquímico'
+            'Criei experiências interativas premiadas para clientes da Fortune 500',
+            'Fiz a ponte entre equipes de design e engenharia',
+            'Prototipei conceitos de RA/RV usando Unity e Three.js',
+            'Otimizei pipelines de animação para experiências web de alta performance'
         ]
     },
-    'faber-castell': {
-        name: 'A.W. Faber-Castell',
-        period: 'Outubro 2009 - Janeiro 2015 (5+ anos)',
-        position: 'Gerente de Sustentabilidade-ESG / SGI/ EHS/SSMA Corporativo',
+    'cyberdyne': {
+        name: 'Cyberdyne Systems',
+        period: 'Jun 2013 - Dez 2015',
+        position: 'Engenheiro de Pesquisa em IA',
         achievements: [
-            'Estruturação da área de Sustentabilidade corporativa',
-            'Implementação de programas de ESG e responsabilidade socioambiental',
-            'Gestão de certificações FSC, RSPO e Atuação Responsável',
-            'Desenvolvimento de projetos de redução de impacto ambiental',
-            'Liderança em sustentabilidade para divisões Stationery e Cosméticos',
-            'Implementação de metodologias Lean Manufacturing e TPM'
+            'Desenvolvi modelos de redes neurais para manutenção preditiva',
+            'Otimizei mecanismos de inferência para dispositivos de borda (edge devices)',
+            'Publiquei 3 artigos sobre aprendizado por reforço em automação industrial',
+            'Colaborei com equipes de robótica em algoritmos de fusão de sensores'
         ]
     },
-    'mitsubishi': {
-        name: 'Mitsubishi Motors',
-        period: 'Janeiro 2008 - Outubro 2009',
-        position: 'Supervisor de Produção, Produtividade, Qualidade e SSO',
+    'aperture': {
+        name: 'Aperture Science',
+        period: 'Jan 2012 - Mai 2013',
+        position: 'Engenheiro de Testes',
         achievements: [
-            'Supervisão de processos produtivos no setor automotivo',
-            'Implementação de sistemas de qualidade IATF 16949',
-            'Gestão de segurança ocupacional em linha de produção',
-            'Otimização de processos e melhoria de produtividade',
-            'Coordenação de equipes multifuncionais na área de Cabine'
+            'Automatizei fluxos de trabalho de teste reduzindo o tempo de ciclo em 80%',
+            'Desenvolvi frameworks de teste personalizados para hardware experimental',
+            'Mantive 99,9% de uptime para sistemas de controle de instalações de teste',
+            'Documentei protocolos de segurança para ambientes de teste perigosos'
         ]
     },
-    'parker': {
-        name: 'Parker Hannifin',
-        period: 'Março 2006 - Dezembro 2007',
-        position: 'Coordenador de Qualidade, Produtividade, Meio Ambiente e SSO',
+    'blackmesa': {
+        name: 'Black Mesa',
+        period: 'Jun 2010 - Dez 2011',
+        position: 'Estagiário de Pesquisa',
         achievements: [
-            'Coordenação de sistemas integrados de gestão',
-            'Implementação de programas de qualidade e produtividade',
-            'Gestão ambiental e de segurança ocupacional',
-            'Desenvolvimento de processos de melhoria contínua',
-            'Atuação na divisão Seals & Refrigeration'
+            'Auxiliei na análise de dados para pesquisa de materiais anômalos',
+            'Desenvolvi ferramentas de visualização para simulações de cascata de ressonância',
+            'Dei suporte a cientistas seniores em experimentos laboratoriais',
+            'Contribuí para o desenvolvimento da interface do traje HEV'
         ]
     }
 };
@@ -115,7 +109,10 @@ function openCompanyModal(companyKey) {
     
     // Mostrar modal
     modal.style.display = 'block';
-    modal.classList.add('active');
+    // Pequeno delay para permitir a transição CSS
+    setTimeout(() => {
+        modal.classList.add('active');
+    }, 10);
     document.body.style.overflow = 'hidden';
     
     console.log('Modal aberto para:', company.name);
@@ -180,6 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('company-modal');
     if (modal) {
         modal.addEventListener('click', function(event) {
+            // Verifica se o clique foi no próprio modal (background) e não no conteúdo
             if (event.target === modal) {
                 closeCompanyModal();
             }

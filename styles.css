@@ -130,6 +130,23 @@ body {
     transition: var(--transition-fast);
 }
 
+.mobile-menu-toggle span.active {
+    background: var(--primary-blue);
+}
+
+.nav.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-md);
+}
+
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--light-gray) 0%, #E0F2FE 100%);
@@ -319,7 +336,7 @@ body {
     margin-bottom: var(--spacing-md);
 }
 
-.section-subtitle p {
+.section-subtitle {
     text-align: center;
     font-size: 2rem;
     color: #6B7280;
@@ -829,6 +846,7 @@ html {
     font-weight: bold;
     cursor: pointer;
     line-height: 1;
+    margin: 10px 15px;
 }
 
 .close-modal:hover {
